@@ -86,7 +86,7 @@ func _on_prestige_button_pressed(): # resets everything, adds prestige score
 
 
 func _on_reset_button_pressed(): # resets everything
-	score = 0
+	score = -1 # krispyking24 on discord spotted the bug! Thanks! :D
 	addition_modifier = 0
 	multi_modifier = 1
 	prestige_modifier = 0
