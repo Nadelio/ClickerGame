@@ -7,5 +7,5 @@ extends Node2D
 
 func _unhandled_input(event):
 	if event.is_action_pressed("toggle_fullscreen"):
-		OS.window_fullscreen = not OS.window_fullscreen
+		DisplayServer.window_set_mode(WINDOW_MODE_FULLSCREEN)
 		get_tree().set_input_as_handled()
